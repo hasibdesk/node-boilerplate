@@ -1,0 +1,78 @@
+<%- include('../includes/header') %> <%- include('../includes/navbar') %>
+<div class="container">
+  <div class="row">
+    <div class="col-10 offset-md-1">
+      <div class="pb-2 mt-5 mb-4 border-bottom">
+        <h3>Create Your Account</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-md-2 mt-5">
+      <form id="signup-form" action="/signup" method="POST">
+        <div class="form-group row">
+          <label
+            class="col-md-3 col-form-label font-weight-bold text-right"
+            for="email"
+            >Email</label
+          >
+          <div class="col-md-7">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              autofocus=""
+              autocomplete="email"
+              required=""
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label
+            class="col-md-3 col-form-label font-weight-bold text-right"
+            for="password"
+            >Password</label
+          >
+          <div class="col-md-7">
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              autocomplete="new-password"
+              required=""
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label
+            class="col-md-3 col-form-label font-weight-bold text-right"
+            for="confirmPassword"
+            >Confirm Password</label
+          >
+          <div class="col-md-7">
+            <input
+              class="form-control"
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+              autocomplete="new-password"
+              required=""
+            />
+          </div>
+        </div>
+        <div class="form-group offset-sm-3 col-md-7 pl-2">
+          <button class="btn btn-success" type="submit">
+            Create Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('../includes/footer') %>

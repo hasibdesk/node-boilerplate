@@ -1,0 +1,32 @@
+{
+  "name": "hasib-starter",
+  "version": "1.0.0",
+  "description": "A Node.js BoilerPlate For Developing Faster Node.js Web Applications",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "npm rebuild node-sass",
+    "start": "node app.js",
+    "test": "nyc mocha --timeout=10000 --exit",
+    "lint": "eslint \"**/*.js\""
+  },
+  "author": "Md Hasibul Hossain (Hasib)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "express-status-monitor": "^1.2.6",
+    "mongoose": "^5.6.4",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
+  }
+}

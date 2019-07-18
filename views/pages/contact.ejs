@@ -1,0 +1,66 @@
+<%- include('../includes/header') %> <%- include('../includes/navbar') %>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-10 offset-md-1">
+      <div class="pb-2 mt-2 mb-4 border-bottom"><h3>Contact with us</h3></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-md-2">
+      <form method="POST">
+        <div class="form-group row">
+          <label class="col-md-4 col-form-label font-weight-bold" for="name"
+            >Your Name</label
+          >
+          <div class="col-md-8">
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="name"
+              autofocus=""
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-4 col-form-label font-weight-bold" for="email"
+            >Your Email</label
+          >
+          <div class="col-md-8">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-4 col-form-label font-weight-bold" for="message"
+            >Please describe the issue or your suggestion</label
+          >
+          <div class="col-md-8">
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="6"
+              autofocus="false"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-12 p-1 text-right">
+            <button class="btn btn-primary" type="submit">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('../includes/footer') %>
